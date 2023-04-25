@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B813722D29E96375000A4715 /* bgImage.png in Resources */ = {isa = PBXBuildFile; fileRef = B813722C29E96375000A4715 /* bgImage.png */; };
+		B83A52F829E6A9FD0015D5A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83A52F729E6A9FD0015D5A8 /* AppDelegate.swift */; };
+		B83A52FA29E6A9FE0015D5A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83A52F929E6A9FE0015D5A8 /* SceneDelegate.swift */; };
+		B83A52FC29E6A9FE0015D5A8 /* FoodRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83A52FB29E6A9FE0015D5A8 /* FoodRecognitionViewController.swift */; };
+		B83A52FF29E6A9FE0015D5A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83A52FD29E6A9FE0015D5A8 /* Main.storyboard */; };
+		B83A530129E6A9FE0015D5A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83A530029E6A9FE0015D5A8 /* Assets.xcassets */; };
+		B83A530429E6A9FE0015D5A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83A530229E6A9FE0015D5A8 /* LaunchScreen.storyboard */; };
+		B83A531029E6BA4C0015D5A8 /* PassioNutritionAISDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83A530E29E6BA370015D5A8 /* PassioNutritionAISDK.xcframework */; };
+		B83A531129E6BA4C0015D5A8 /* PassioNutritionAISDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B83A530E29E6BA370015D5A8 /* PassioNutritionAISDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B84AAB9529E80573000890FF /* FoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B84AAB9329E80573000890FF /* FoodCell.xib */; };
+		B84AAB9629E80573000890FF /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84AAB9429E80573000890FF /* FoodCell.swift */; };
+		B8E0FCF629F78ECF00F6D84D /* Music2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B8E0FCF329F78ECF00F6D84D /* Music2.mp3 */; };
+		B8E0FCF729F78ECF00F6D84D /* Music3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B8E0FCF429F78ECF00F6D84D /* Music3.mp3 */; };
+		B8E0FCF829F78ECF00F6D84D /* Music1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B8E0FCF529F78ECF00F6D84D /* Music1.mp3 */; };
+		B8F7E33029F7864A00E27928 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F7E32F29F7864A00E27928 /* SettingsViewController.swift */; };
+		B8FF0C3D29F6AF54001157EE /* FoodCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FF0C3B29F6AF54001157EE /* FoodCardView.swift */; };
+		B8FF0C3E29F6AF54001157EE /* FoodCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8FF0C3C29F6AF54001157EE /* FoodCardView.xib */; };
+		B8FF0C4329F6AF71001157EE /* AlternativesMicroCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8FF0C3F29F6AF71001157EE /* AlternativesMicroCollectionViewCell.xib */; };
+		B8FF0C4429F6AF71001157EE /* FoodNutritionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FF0C4029F6AF71001157EE /* FoodNutritionCell.swift */; };
+		B8FF0C4529F6AF71001157EE /* AlternativesMicroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FF0C4129F6AF71001157EE /* AlternativesMicroCollectionViewCell.swift */; };
+		B8FF0C4629F6AF71001157EE /* FoodNutritionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8FF0C4229F6AF71001157EE /* FoodNutritionCell.xib */; };
+		B8FF0C6129F6AFFF001157EE /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FF0C5929F6AFFF001157EE /* UICollectionView+Extension.swift */; };
+		B8FF0C6229F6AFFF001157EE /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FF0C5A29F6AFFF001157EE /* URL+Extension.swift */; };
+		B8FF0C6429F6AFFF001157EE /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FF0C5C29F6AFFF001157EE /* String+Extension.swift */; };
+		B8FF0C6529F6AFFF001157EE /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FF0C5D29F6AFFF001157EE /* Double+Extension.swift */; };
+		B8FF0C6629F6AFFF001157EE /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FF0C5E29F6AFFF001157EE /* UIViewController+Extension.swift */; };
+		B8FF0C6729F6AFFF001157EE /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FF0C5F29F6AFFF001157EE /* FileManager+Extension.swift */; };
+		B8FF0C6829F6AFFF001157EE /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FF0C6029F6AFFF001157EE /* UIView+Extension.swift */; };
+		B8FF0C6A29F6B010001157EE /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FF0C6929F6B010001157EE /* UITableView+Extension.swift */; };
+		B8FF0C6C29F6B062001157EE /* FoodRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FF0C6B29F6B062001157EE /* FoodRecord.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B83A531229E6BA4C0015D5A8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B83A531129E6BA4C0015D5A8 /* PassioNutritionAISDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B813722C29E96375000A4715 /* bgImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgImage.png; sourceTree = "<group>"; };
+		B83A52F429E6A9FD0015D5A8 /* NutritionAIReels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutritionAIReels.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B83A52F729E6A9FD0015D5A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B83A52F929E6A9FE0015D5A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B83A52FB29E6A9FE0015D5A8 /* FoodRecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecognitionViewController.swift; sourceTree = "<group>"; };
+		B83A52FE29E6A9FE0015D5A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B83A530029E6A9FE0015D5A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B83A530329E6A9FE0015D5A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B83A530529E6A9FE0015D5A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B83A530E29E6BA370015D5A8 /* PassioNutritionAISDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PassioNutritionAISDK.xcframework; sourceTree = SOURCE_ROOT; };
+		B84AAB9329E80573000890FF /* FoodCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodCell.xib; sourceTree = "<group>"; };
+		B84AAB9429E80573000890FF /* FoodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
+		B8E0FCF329F78ECF00F6D84D /* Music2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music2.mp3; sourceTree = "<group>"; };
+		B8E0FCF429F78ECF00F6D84D /* Music3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music3.mp3; sourceTree = "<group>"; };
+		B8E0FCF529F78ECF00F6D84D /* Music1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music1.mp3; sourceTree = "<group>"; };
+		B8F7E32F29F7864A00E27928 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B8FF0C3B29F6AF54001157EE /* FoodCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodCardView.swift; sourceTree = "<group>"; };
+		B8FF0C3C29F6AF54001157EE /* FoodCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodCardView.xib; sourceTree = "<group>"; };
+		B8FF0C3F29F6AF71001157EE /* AlternativesMicroCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlternativesMicroCollectionViewCell.xib; sourceTree = "<group>"; };
+		B8FF0C4029F6AF71001157EE /* FoodNutritionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodNutritionCell.swift; sourceTree = "<group>"; };
+		B8FF0C4129F6AF71001157EE /* AlternativesMicroCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlternativesMicroCollectionViewCell.swift; sourceTree = "<group>"; };
+		B8FF0C4229F6AF71001157EE /* FoodNutritionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodNutritionCell.xib; sourceTree = "<group>"; };
+		B8FF0C5929F6AFFF001157EE /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		B8FF0C5A29F6AFFF001157EE /* URL+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		B8FF0C5C29F6AFFF001157EE /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		B8FF0C5D29F6AFFF001157EE /* Double+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		B8FF0C5E29F6AFFF001157EE /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		B8FF0C5F29F6AFFF001157EE /* FileManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
+		B8FF0C6029F6AFFF001157EE /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		B8FF0C6929F6B010001157EE /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		B8FF0C6B29F6B062001157EE /* FoodRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodRecord.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B83A52F129E6A9FD0015D5A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B83A531029E6BA4C0015D5A8 /* PassioNutritionAISDK.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B83A52EB29E6A9FD0015D5A8 = {
+			isa = PBXGroup;
+			children = (
+				B83A52F629E6A9FD0015D5A8 /* NutritionAIReels */,
+				B83A52F529E6A9FD0015D5A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B83A52F529E6A9FD0015D5A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B83A52F429E6A9FD0015D5A8 /* NutritionAIReels.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B83A52F629E6A9FD0015D5A8 /* NutritionAIReels */ = {
+			isa = PBXGroup;
+			children = (
+				B83A52F729E6A9FD0015D5A8 /* AppDelegate.swift */,
+				B83A52F929E6A9FE0015D5A8 /* SceneDelegate.swift */,
+				B83A530229E6A9FE0015D5A8 /* LaunchScreen.storyboard */,
+				B83A530D29E6AAD70015D5A8 /* AIReels */,
+				B8E0FCF229F78EBB00F6D84D /* Media */,
+				B84AAB8729E7F8BD000890FF /* Extension */,
+				B83A530029E6A9FE0015D5A8 /* Assets.xcassets */,
+				B813722C29E96375000A4715 /* bgImage.png */,
+				B83A530E29E6BA370015D5A8 /* PassioNutritionAISDK.xcframework */,
+				B83A530529E6A9FE0015D5A8 /* Info.plist */,
+			);
+			path = NutritionAIReels;
+			sourceTree = "<group>";
+		};
+		B83A530D29E6AAD70015D5A8 /* AIReels */ = {
+			isa = PBXGroup;
+			children = (
+				B83A52FD29E6A9FE0015D5A8 /* Main.storyboard */,
+				B83A52FB29E6A9FE0015D5A8 /* FoodRecognitionViewController.swift */,
+				B8F7E32F29F7864A00E27928 /* SettingsViewController.swift */,
+				B8E0FCF929F78EF800F6D84D /* Views */,
+				B84AAB8C29E80125000890FF /* Cell */,
+				B8E0FCFA29F78F0100F6D84D /* Model */,
+			);
+			path = AIReels;
+			sourceTree = "<group>";
+		};
+		B84AAB8729E7F8BD000890FF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B8FF0C5D29F6AFFF001157EE /* Double+Extension.swift */,
+				B8FF0C5F29F6AFFF001157EE /* FileManager+Extension.swift */,
+				B8FF0C5C29F6AFFF001157EE /* String+Extension.swift */,
+				B8FF0C6929F6B010001157EE /* UITableView+Extension.swift */,
+				B8FF0C5929F6AFFF001157EE /* UICollectionView+Extension.swift */,
+				B8FF0C6029F6AFFF001157EE /* UIView+Extension.swift */,
+				B8FF0C5E29F6AFFF001157EE /* UIViewController+Extension.swift */,
+				B8FF0C5A29F6AFFF001157EE /* URL+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B84AAB8C29E80125000890FF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B8FF0C4229F6AF71001157EE /* FoodNutritionCell.xib */,
+				B8FF0C4029F6AF71001157EE /* FoodNutritionCell.swift */,
+				B84AAB9329E80573000890FF /* FoodCell.xib */,
+				B84AAB9429E80573000890FF /* FoodCell.swift */,
+				B8FF0C3F29F6AF71001157EE /* AlternativesMicroCollectionViewCell.xib */,
+				B8FF0C4129F6AF71001157EE /* AlternativesMicroCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B8E0FCF229F78EBB00F6D84D /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				B8E0FCF529F78ECF00F6D84D /* Music1.mp3 */,
+				B8E0FCF329F78ECF00F6D84D /* Music2.mp3 */,
+				B8E0FCF429F78ECF00F6D84D /* Music3.mp3 */,
+			);
+			name = Media;
+			path = AIReels/Media;
+			sourceTree = "<group>";
+		};
+		B8E0FCF929F78EF800F6D84D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B8FF0C3C29F6AF54001157EE /* FoodCardView.xib */,
+				B8FF0C3B29F6AF54001157EE /* FoodCardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B8E0FCFA29F78F0100F6D84D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B8FF0C6B29F6B062001157EE /* FoodRecord.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B83A52F329E6A9FD0015D5A8 /* NutritionAIReels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B83A530829E6A9FE0015D5A8 /* Build configuration list for PBXNativeTarget "NutritionAIReels" */;
+			buildPhases = (
+				B83A52F029E6A9FD0015D5A8 /* Sources */,
+				B83A52F129E6A9FD0015D5A8 /* Frameworks */,
+				B83A52F229E6A9FD0015D5A8 /* Resources */,
+				B83A531229E6BA4C0015D5A8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NutritionAIReels;
+			productName = NutritionAIReels;
+			productReference = B83A52F429E6A9FD0015D5A8 /* NutritionAIReels.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B83A52EC29E6A9FD0015D5A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B83A52F329E6A9FD0015D5A8 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = B83A52EF29E6A9FD0015D5A8 /* Build configuration list for PBXProject "NutritionAIReels" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B83A52EB29E6A9FD0015D5A8;
+			productRefGroup = B83A52F529E6A9FD0015D5A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B83A52F329E6A9FD0015D5A8 /* NutritionAIReels */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B83A52F229E6A9FD0015D5A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8FF0C3E29F6AF54001157EE /* FoodCardView.xib in Resources */,
+				B813722D29E96375000A4715 /* bgImage.png in Resources */,
+				B8E0FCF729F78ECF00F6D84D /* Music3.mp3 in Resources */,
+				B8FF0C4629F6AF71001157EE /* FoodNutritionCell.xib in Resources */,
+				B84AAB9529E80573000890FF /* FoodCell.xib in Resources */,
+				B8E0FCF629F78ECF00F6D84D /* Music2.mp3 in Resources */,
+				B83A530429E6A9FE0015D5A8 /* LaunchScreen.storyboard in Resources */,
+				B8E0FCF829F78ECF00F6D84D /* Music1.mp3 in Resources */,
+				B83A530129E6A9FE0015D5A8 /* Assets.xcassets in Resources */,
+				B8FF0C4329F6AF71001157EE /* AlternativesMicroCollectionViewCell.xib in Resources */,
+				B83A52FF29E6A9FE0015D5A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B83A52F029E6A9FD0015D5A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8FF0C6129F6AFFF001157EE /* UICollectionView+Extension.swift in Sources */,
+				B8FF0C6829F6AFFF001157EE /* UIView+Extension.swift in Sources */,
+				B8FF0C6C29F6B062001157EE /* FoodRecord.swift in Sources */,
+				B83A52FC29E6A9FE0015D5A8 /* FoodRecognitionViewController.swift in Sources */,
+				B8FF0C3D29F6AF54001157EE /* FoodCardView.swift in Sources */,
+				B8FF0C6629F6AFFF001157EE /* UIViewController+Extension.swift in Sources */,
+				B8FF0C6529F6AFFF001157EE /* Double+Extension.swift in Sources */,
+				B8FF0C6429F6AFFF001157EE /* String+Extension.swift in Sources */,
+				B8FF0C6229F6AFFF001157EE /* URL+Extension.swift in Sources */,
+				B8FF0C4529F6AF71001157EE /* AlternativesMicroCollectionViewCell.swift in Sources */,
+				B83A52F829E6A9FD0015D5A8 /* AppDelegate.swift in Sources */,
+				B8FF0C6729F6AFFF001157EE /* FileManager+Extension.swift in Sources */,
+				B8F7E33029F7864A00E27928 /* SettingsViewController.swift in Sources */,
+				B84AAB9629E80573000890FF /* FoodCell.swift in Sources */,
+				B8FF0C4429F6AF71001157EE /* FoodNutritionCell.swift in Sources */,
+				B83A52FA29E6A9FE0015D5A8 /* SceneDelegate.swift in Sources */,
+				B8FF0C6A29F6B010001157EE /* UITableView+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B83A52FD29E6A9FE0015D5A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B83A52FE29E6A9FE0015D5A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B83A530229E6A9FE0015D5A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B83A530329E6A9FE0015D5A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B83A530629E6A9FE0015D5A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B83A530729E6A9FE0015D5A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B83A530929E6A9FE0015D5A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7224G6JACN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NutritionAIReels/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "AI Reels";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow camera access to recognize foods";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow app to save Photos";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.passio.NutritionAIReels;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = MI_WildCard_Dev;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B83A530A29E6A9FE0015D5A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7224G6JACN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NutritionAIReels/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "AI Reels";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow camera access to recognize foods";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow app to save Photos";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.passio.NutritionAIReels;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = MI_WildCard_Dev;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B83A52EF29E6A9FD0015D5A8 /* Build configuration list for PBXProject "NutritionAIReels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B83A530629E6A9FE0015D5A8 /* Debug */,
+				B83A530729E6A9FE0015D5A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B83A530829E6A9FE0015D5A8 /* Build configuration list for PBXNativeTarget "NutritionAIReels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B83A530929E6A9FE0015D5A8 /* Debug */,
+				B83A530A29E6A9FE0015D5A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B83A52EC29E6A9FD0015D5A8 /* Project object */;
+}
