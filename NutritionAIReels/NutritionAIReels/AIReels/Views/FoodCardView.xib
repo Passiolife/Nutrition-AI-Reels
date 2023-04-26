@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="368" height="201"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
-                    <color key="backgroundColor" name="transparentColor"/>
+                    <color key="backgroundColor" name="transparentCardColor"/>
                     <blurEffect style="regular"/>
                 </visualEffectView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dex-q9-y1G">
@@ -53,14 +53,15 @@
                         </stackView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgZ-8X-ZgD">
                             <rect key="frame" x="322" y="27" width="38" height="38"/>
+                            <color key="backgroundColor" name="cellBgColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="38" id="eRc-dk-2PY"/>
                                 <constraint firstAttribute="width" constant="38" id="eza-9f-yTi"/>
                             </constraints>
-                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" image="chevron.up" catalog="system">
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="medium" weight="regular"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="medium" weight="semibold"/>
                             </state>
                             <connections>
                                 <action selector="onAddFoodTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="rml-4d-Ner"/>
@@ -180,8 +181,11 @@
     </objects>
     <resources>
         <image name="chevron.up" catalog="system" width="128" height="70"/>
-        <namedColor name="transparentColor">
-            <color red="0.16411648068013968" green="0.16373272070094405" blue="0.34941208964646464" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="cellBgColor">
+            <color red="0.93725490196078431" green="0.94117647058823528" blue="0.96470588235294119" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="transparentCardColor">
+            <color red="0.0" green="0.078431372549019607" blue="0.2627450980392157" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="separatorColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>

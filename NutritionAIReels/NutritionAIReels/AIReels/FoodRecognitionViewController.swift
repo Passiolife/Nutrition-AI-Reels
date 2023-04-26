@@ -18,16 +18,16 @@ final class FoodRecognitionViewController: UIViewController {
     @IBOutlet weak var foodBlurView: UIVisualEffectView!
     @IBOutlet weak var foodView: UIView!
     @IBOutlet weak var foodNameLabel: UILabel!
-    @IBOutlet weak var sdkStatusLabel: UILabel!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var captureButton: UIButton!
     @IBOutlet weak var foodTableView: UITableView!
-
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     // MARK: Properties
     private let passioSDK = PassioNutritionAI.shared
     private let screenRecorder = RPScreenRecorder.shared()
     private let startRecording = "record.circle.fill"
     private let stopRecording = "stop.circle.fill"
+    private var settingsView: SettingsView?
     private var foodCardView: FoodCardView?
     private var foodRecord: FoodRecord?
     private var videoLayer: AVCaptureVideoPreviewLayer?
@@ -57,9 +57,10 @@ final class FoodRecognitionViewController: UIViewController {
     // MARK: View LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        configureNavBar()
         checkCameraPermission()
         configureTableView()
-        addSettingsButton()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -76,11 +77,26 @@ final class FoodRecognitionViewController: UIViewController {
 // MARK: - Configure UI
 extension FoodRecognitionViewController {
 
+    private func configureNavBar() {
+
+        // Configure Navigation bar
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        navigationItem.hidesBackButton = true
+        let config = UIImage.SymbolConfiguration(weight: .semibold)
+        let image = UIImage(systemName: "gear", withConfiguration: config)
+        let rightBarButton = UIBarButtonItem(image: image,
+                                             style: .plain,
+                                             target: self,
+                                             action: #selector(onSettingsTapped))
+        navigationController?.navigationBar.tintColor = .white
+        navigationItem.rightBarButtonItem = rightBarButton
+    }
+
     private func configureTableView() {
         // Configure TableView and other views
         foodTableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 50, right: 0)
-        foodView.roundMyCorenrWith(radius: 10)
-        foodBlurView.roundMyCorenrWith(radius: 10)
+        foodView.roundMyCorner()
+        foodBlurView.roundMyCorner()
         foodTableView.dataSource = self
         foodTableView.register(UINib(nibName: FoodNutritionCell.identifier, bundle: nil),
                                forCellReuseIdentifier: FoodNutritionCell.identifier)
@@ -88,30 +104,30 @@ extension FoodRecognitionViewController {
                                forCellReuseIdentifier: FoodCell.identifier)
     }
 
-    private func addSettingsButton() {
-        // Add Settings Button on Nav bar
-        let config = UIImage.SymbolConfiguration(weight: .semibold)
-        let image = UIImage(systemName: "gear", withConfiguration: config)
-        let rightBarButton = UIBarButtonItem(image: image,
-                                             style: .plain,
-                                             target: self,
-                                             action: #selector(onSettingsTapped))
-        navigationController?.navigationBar.tintColor = .systemOrange
-        navigationItem.rightBarButtonItem = rightBarButton
-    }
-
     @objc func onSettingsTapped() {
-        // Navigate to Settings screen
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        guard let settingsVC = storyBoard.instantiateViewController(withIdentifier: "SettingsViewController") as? SettingsViewController else {
-            return
+        // Add Settings View
+        let frame = CGRect(x: 0,
+                           y: UIScreen.main.bounds.height - 421,
+                           width: UIScreen.main.bounds.width,
+                           height: 421)
+
+        if settingsView == nil {
+            settingsView = SettingsView.fromNib()
+            settingsView?.delegate = self
+            settingsView?.frame = frame
+            settingsView?.captureMode = captureMode
+            settingsView?.foodViewMode = foodViewMode
+            settingsView?.isMusicOn = isMusicOn
+            manageViews(isHidden: true)
+
+            UIView.animate(withDuration: 0.3, animations: {
+                self.settingsView?.alpha = 1
+                self.settingsView?.frame = frame
+                if let settingsView = self.settingsView {
+                    self.view.addSubview(settingsView)
+                }
+            })
         }
-        settingsVC.captureMode = captureMode
-        settingsVC.foodViewMode = foodViewMode
-        settingsVC.isMusicOn = isMusicOn
-        settingsVC.delegate = self
-        settingsVC.modalPresentationStyle = .formSheet
-        present(settingsVC, animated: true)
     }
 
     private func checkCameraPermission() {
@@ -139,20 +155,8 @@ extension FoodRecognitionViewController {
     }
 
     private func setupVideoLayerAndStartRecognition() {
-        configureSDK()
         setupVideoLayer()
         startFoodRecognition()
-    }
-
-    private func configureSDK() {
-        // Configure SDK with key
-        #error("Use the API key you received from us or request a key from support@passiolife.com. Delete this line before building.")
-        let key = "" // Add your key here.
-        let passioConfig = PassioConfiguration(key: key)
-        passioSDK.statusDelegate = self
-        passioSDK.configure(passioConfiguration: passioConfig) { (status) in
-            print("Mode = \(status.mode)\nmissingfiles = \(String(describing: status.missingFiles))")
-        }
     }
 
     private func setupVideoLayer() {
@@ -171,19 +175,21 @@ extension FoodRecognitionViewController {
 extension FoodRecognitionViewController {
 
     private func startFoodRecognition() {
-        guard passioSDK.status.mode == .isReadyForDetection else { return }
-        // Configure Food Detection
-        let detectionConfig = FoodDetectionConfiguration(detectVisual: true,
-                                                         detectBarcodes: true,
-                                                         detectPackagedFood: true)
-        // Start Food detection
-        passioSDK.startFoodDetection(detectionConfig: detectionConfig,
-                                     foodRecognitionDelegate: self) { (ready) in
-            if !ready {
-                print("SDK was not configured correctly")
-            } else {
-                DispatchQueue.main.async {
-                    self.manageViews(isHidden: false)
+
+        DispatchQueue.global(qos: .default).async { [self] in
+            // Configure Food Detection
+            let detectionConfig = FoodDetectionConfiguration(detectVisual: true,
+                                                             detectBarcodes: true,
+                                                             detectPackagedFood: true)
+            // Start Food detection
+            passioSDK.startFoodDetection(detectionConfig: detectionConfig,
+                                         foodRecognitionDelegate: self) { (ready) in
+                if !ready {
+                    print("SDK was not configured correctly")
+                } else {
+                    DispatchQueue.main.async {
+                        self.manageViews(isHidden: false)
+                    }
                 }
             }
         }
@@ -207,7 +213,6 @@ extension FoodRecognitionViewController: FoodRecognitionDelegate {
                             nutritionFacts: PassioNutritionAISDK.PassioNutritionFacts?) {
 
         DispatchQueue.main.async { [self] in
-            sdkStatusLabel.isHidden = true
             activityIndicator.stopAnimating()
         }
 
@@ -474,12 +479,23 @@ extension FoodRecognitionViewController: SettingsDelegate {
         selectedMusic = music
     }
 
+    func onSave() {
+        // Remove settings views
+        UIView.animate(withDuration: 0.3, animations: {
+            self.settingsView?.alpha = 0
+        }, completion: { _ in
+            self.settingsView?.removeFromSuperview()
+            self.settingsView = nil
+            self.isRecognitionsPaused = self.captureMode == .video ? true : false
+        })
+    }
+
     private func handleModeChanged() {
         // Remove Foods, hide food views and set recognition paused based on selection
         foods = []
         foodTableView.reloadData()
         hideFoodView()
-        isRecognitionsPaused = captureMode == .video ? true : false
+        manageViews(isHidden: false)
     }
 }
 
@@ -714,7 +730,12 @@ extension FoodRecognitionViewController {
         showFoodCardView(show: false)
 
         if captureMode == .photo {
-            isRecognitionsPaused = isHidden
+            if settingsView == nil {
+                isRecognitionsPaused = isHidden
+            } else {
+                isRecognitionsPaused = true
+            }
+            
         } else {
             isRecognitionsPaused = true
         }
@@ -748,42 +769,6 @@ extension FoodRecognitionViewController {
         DispatchQueue.main.async { [self] in
             foods.removeAll()
             foodTableView.reloadData()
-        }
-    }
-}
-
-// MARK: - Passio SDK Status Delegate
-extension FoodRecognitionViewController: PassioStatusDelegate {
-    
-    func passioStatusChanged(status: PassioStatus) {
-        DispatchQueue.main.async {
-            self.startFoodRecognition()
-        }
-    }
-    
-    func passioProcessing(filesLeft: Int) {
-        DispatchQueue.main.async {
-            self.sdkStatusLabel.text = "Files left to Process \(filesLeft)"
-        }
-    }
-    
-    func completedDownloadingAllFiles(filesLocalURLs: [FileLocalURL]) {
-        DispatchQueue.main.async {
-            self.sdkStatusLabel.text = "Completed downloading all files"
-        }
-    }
-    
-    func completedDownloadingFile(fileLocalURL: FileLocalURL, filesLeft: Int) {
-        DispatchQueue.main.async {
-            self.sdkStatusLabel.text = "Files left to download \(filesLeft)"
-        }
-    }
-    
-    func downloadingError(message: String) {
-        print("Download Error-= \(message)")
-        DispatchQueue.main.async {
-            self.sdkStatusLabel.text = "\(message)"
-            self.activityIndicator.stopAnimating()
         }
     }
 }

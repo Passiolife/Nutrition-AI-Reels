@@ -20,7 +20,7 @@ final class FoodNutritionCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        containerView.roundMyCorenrWith(radius: 8)
-        blurView.roundMyCorenrWith(radius: 8)
+        containerView.roundMyCorner()
+        blurView.roundMyCorner()
     }
 }

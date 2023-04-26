@@ -21,6 +21,6 @@ final class AlternativesMicroCollectionViewCell: UICollectionViewCell {
 
         imageAlternative?.roundMyCorner()
         roundMyCorner()
-        applyBorder(width: 1, color: .white.withAlphaComponent(0.8))
+        applyBorder(width: 1, color: .white.withAlphaComponent(0.2))
     }
 }

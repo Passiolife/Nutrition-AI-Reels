@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_72" orientation="portrait" appearance="dark"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -20,29 +20,33 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="tRT-5N-ynn">
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="passio_logo" translatesAutoresizingMaskIntoConstraints="NO" id="PCl-Uz-xab">
-                                <rect key="frame" x="95" y="426" width="240" height="80"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="passioLogo" translatesAutoresizingMaskIntoConstraints="NO" id="PCl-Uz-xab">
+                                <rect key="frame" x="45.666666666666657" y="240" width="339" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="a89-cS-1Oe"/>
-                                    <constraint firstAttribute="height" constant="80" id="yh5-fZ-BmO"/>
+                                    <constraint firstAttribute="width" secondItem="PCl-Uz-xab" secondAttribute="height" multiplier="339:40" id="XF2-wf-U5n"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nutrition-AI Reels" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ome-aX-yyU">
-                                <rect key="frame" x="114.66666666666669" y="514" width="201" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nutrition-AI Reels" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ome-aX-yyU">
+                                <rect key="frame" x="30" y="288" width="370" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="56A-oy-Xlw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ome-aX-yyU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8Nk-JA-g9l"/>
-                            <constraint firstItem="PCl-Uz-xab" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="8s8-wu-Ucm"/>
                             <constraint firstItem="tRT-5N-ynn" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="GEB-4o-aWt"/>
+                            <constraint firstItem="PCl-Uz-xab" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="180.99000000000001" id="H1d-D5-rDt"/>
+                            <constraint firstItem="ome-aX-yyU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="MYP-a3-MKu"/>
                             <constraint firstAttribute="bottom" secondItem="tRT-5N-ynn" secondAttribute="bottom" id="NUD-87-622"/>
+                            <constraint firstItem="PCl-Uz-xab" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.788372" id="OoA-N3-tSF"/>
                             <constraint firstItem="tRT-5N-ynn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iuE-bH-0lK"/>
                             <constraint firstItem="PCl-Uz-xab" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jb3-2M-dVV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ome-aX-yyU" secondAttribute="trailing" constant="30" id="kTg-t9-UXb"/>
                             <constraint firstItem="ome-aX-yyU" firstAttribute="top" secondItem="PCl-Uz-xab" secondAttribute="bottom" constant="8" id="wR4-dI-w4b"/>
                             <constraint firstItem="tRT-5N-ynn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zgf-aw-zhN"/>
                         </constraints>
@@ -55,12 +59,9 @@
     </scenes>
     <resources>
         <image name="bgImage.png" width="428" height="926"/>
-        <image name="passio_logo" width="114" height="36"/>
+        <image name="passioLogo" width="263.33334350585938" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

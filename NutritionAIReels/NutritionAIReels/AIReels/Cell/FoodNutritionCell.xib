@@ -6,7 +6,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -25,7 +24,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="254" height="40"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </view>
-                        <color key="backgroundColor" name="transparentColor"/>
+                        <color key="backgroundColor" name="cellBgColor"/>
                         <blurEffect style="regular"/>
                     </visualEffectView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4CK-jY-Qfq">
@@ -40,7 +39,6 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_Calorie" translatesAutoresizingMaskIntoConstraints="NO" id="Jz6-nT-nTO">
                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="tintColor" systemColor="systemOrangeColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="20" id="MF7-4d-C7r"/>
                                                     <constraint firstAttribute="height" constant="20" id="khY-91-fD3"/>
@@ -60,7 +58,6 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_Carbs" translatesAutoresizingMaskIntoConstraints="NO" id="02I-MJ-isS">
                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="tintColor" systemColor="systemOrangeColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="4xY-ob-R3Y"/>
                                                     <constraint firstAttribute="width" constant="20" id="oEI-Qm-6tY"/>
@@ -80,7 +77,6 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_Protein" translatesAutoresizingMaskIntoConstraints="NO" id="75W-Vr-lnZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="tintColor" systemColor="systemOrangeColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="4n7-bt-JAE"/>
                                                     <constraint firstAttribute="width" constant="20" id="nx8-lT-de5"/>
@@ -100,7 +96,6 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_Fat" translatesAutoresizingMaskIntoConstraints="NO" id="waY-b5-Anm">
                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="tintColor" systemColor="systemOrangeColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="3Ze-E1-1jt"/>
                                                     <constraint firstAttribute="width" constant="20" id="Zkc-qt-Luy"/>
@@ -156,11 +151,8 @@
         <image name="ic_Carbs" width="20" height="18"/>
         <image name="ic_Fat" width="15" height="20"/>
         <image name="ic_Protein" width="20" height="20"/>
-        <namedColor name="transparentColor">
-            <color red="0.16411648068013968" green="0.16373272070094405" blue="0.34941208964646464" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="cellBgColor">
+            <color red="0.93725490196078431" green="0.94117647058823528" blue="0.96470588235294119" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>

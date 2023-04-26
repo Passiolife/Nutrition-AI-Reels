@@ -7,7 +7,6 @@
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -26,7 +25,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </view>
-                        <color key="backgroundColor" name="transparentColor"/>
+                        <color key="backgroundColor" name="cellBgColor"/>
                         <blurEffect style="regular"/>
                     </visualEffectView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3I8-L1-zPV">
@@ -36,7 +35,7 @@
                             <constraint firstAttribute="height" constant="30" id="8dG-7r-E3q"/>
                             <constraint firstAttribute="width" constant="30" id="dpB-Yx-etI"/>
                         </constraints>
-                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal">
                             <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
@@ -49,7 +48,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="135.33333333333331" height="40"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </view>
-                        <color key="backgroundColor" name="transparentColor"/>
+                        <color key="backgroundColor" name="cellBgColor"/>
                         <blurEffect style="regular"/>
                     </visualEffectView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QK3-Od-vdv">
@@ -104,11 +103,8 @@
     </objects>
     <resources>
         <image name="xmark" catalog="system" width="128" height="113"/>
-        <namedColor name="transparentColor">
-            <color red="0.16411648068013968" green="0.16373272070094405" blue="0.34941208964646464" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="cellBgColor">
+            <color red="0.93725490196078431" green="0.94117647058823528" blue="0.96470588235294119" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>

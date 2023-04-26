@@ -37,6 +37,18 @@ extension UIView {
         clipsToBounds = true
     }
 
+    func roundMyCornerWith(radius: CGFloat, upper: Bool, down: Bool) {
+        self.layer.cornerRadius = radius
+        self.layer.masksToBounds = true
+        if upper {
+            self.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        }
+        if down {
+            self.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        }
+        self.clipsToBounds = true
+    }
+
     func applyBorder(width: CGFloat, color: UIColor) {
         layer.borderColor = color.cgColor
         layer.borderWidth = width

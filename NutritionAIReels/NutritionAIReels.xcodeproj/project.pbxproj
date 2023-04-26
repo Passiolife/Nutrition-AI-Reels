@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B813722D29E96375000A4715 /* bgImage.png in Resources */ = {isa = PBXBuildFile; fileRef = B813722C29E96375000A4715 /* bgImage.png */; };
 		B83A52F829E6A9FD0015D5A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83A52F729E6A9FD0015D5A8 /* AppDelegate.swift */; };
 		B83A52FA29E6A9FE0015D5A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83A52F929E6A9FE0015D5A8 /* SceneDelegate.swift */; };
 		B83A52FC29E6A9FE0015D5A8 /* FoodRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83A52FB29E6A9FE0015D5A8 /* FoodRecognitionViewController.swift */; };
@@ -18,10 +17,14 @@
 		B83A531129E6BA4C0015D5A8 /* PassioNutritionAISDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B83A530E29E6BA370015D5A8 /* PassioNutritionAISDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B84AAB9529E80573000890FF /* FoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B84AAB9329E80573000890FF /* FoodCell.xib */; };
 		B84AAB9629E80573000890FF /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84AAB9429E80573000890FF /* FoodCell.swift */; };
+		B890B9EB29F8DCCF00C3EC12 /* bgImage.png in Resources */ = {isa = PBXBuildFile; fileRef = B890B9EA29F8DCCF00C3EC12 /* bgImage.png */; };
+		B890B9ED29F8E19600C3EC12 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B890B9EC29F8E19600C3EC12 /* EntryViewController.swift */; };
+		B890B9EF29F8E24400C3EC12 /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B890B9EE29F8E24400C3EC12 /* UIStoryboard+Extension.swift */; };
+		B890B9F129F8EDCA00C3EC12 /* Music3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B890B9F029F8EDCA00C3EC12 /* Music3.mp3 */; };
+		B890B9F329F8F53800C3EC12 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B890B9F229F8F53800C3EC12 /* SettingsView.swift */; };
+		B890B9F529F8F54500C3EC12 /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B890B9F429F8F54500C3EC12 /* SettingsView.xib */; };
 		B8E0FCF629F78ECF00F6D84D /* Music2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B8E0FCF329F78ECF00F6D84D /* Music2.mp3 */; };
-		B8E0FCF729F78ECF00F6D84D /* Music3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B8E0FCF429F78ECF00F6D84D /* Music3.mp3 */; };
 		B8E0FCF829F78ECF00F6D84D /* Music1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B8E0FCF529F78ECF00F6D84D /* Music1.mp3 */; };
-		B8F7E33029F7864A00E27928 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F7E32F29F7864A00E27928 /* SettingsViewController.swift */; };
 		B8FF0C3D29F6AF54001157EE /* FoodCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FF0C3B29F6AF54001157EE /* FoodCardView.swift */; };
 		B8FF0C3E29F6AF54001157EE /* FoodCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8FF0C3C29F6AF54001157EE /* FoodCardView.xib */; };
 		B8FF0C4329F6AF71001157EE /* AlternativesMicroCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8FF0C3F29F6AF71001157EE /* AlternativesMicroCollectionViewCell.xib */; };
@@ -54,7 +57,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B813722C29E96375000A4715 /* bgImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgImage.png; sourceTree = "<group>"; };
 		B83A52F429E6A9FD0015D5A8 /* NutritionAIReels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutritionAIReels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83A52F729E6A9FD0015D5A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B83A52F929E6A9FE0015D5A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,10 +68,14 @@
 		B83A530E29E6BA370015D5A8 /* PassioNutritionAISDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PassioNutritionAISDK.xcframework; sourceTree = SOURCE_ROOT; };
 		B84AAB9329E80573000890FF /* FoodCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodCell.xib; sourceTree = "<group>"; };
 		B84AAB9429E80573000890FF /* FoodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
+		B890B9EA29F8DCCF00C3EC12 /* bgImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgImage.png; sourceTree = "<group>"; };
+		B890B9EC29F8E19600C3EC12 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		B890B9EE29F8E24400C3EC12 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		B890B9F029F8EDCA00C3EC12 /* Music3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music3.mp3; sourceTree = "<group>"; };
+		B890B9F229F8F53800C3EC12 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B890B9F429F8F54500C3EC12 /* SettingsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsView.xib; sourceTree = "<group>"; };
 		B8E0FCF329F78ECF00F6D84D /* Music2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music2.mp3; sourceTree = "<group>"; };
-		B8E0FCF429F78ECF00F6D84D /* Music3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music3.mp3; sourceTree = "<group>"; };
 		B8E0FCF529F78ECF00F6D84D /* Music1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music1.mp3; sourceTree = "<group>"; };
-		B8F7E32F29F7864A00E27928 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B8FF0C3B29F6AF54001157EE /* FoodCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodCardView.swift; sourceTree = "<group>"; };
 		B8FF0C3C29F6AF54001157EE /* FoodCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodCardView.xib; sourceTree = "<group>"; };
 		B8FF0C3F29F6AF71001157EE /* AlternativesMicroCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlternativesMicroCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -125,7 +131,7 @@
 				B8E0FCF229F78EBB00F6D84D /* Media */,
 				B84AAB8729E7F8BD000890FF /* Extension */,
 				B83A530029E6A9FE0015D5A8 /* Assets.xcassets */,
-				B813722C29E96375000A4715 /* bgImage.png */,
+				B890B9EA29F8DCCF00C3EC12 /* bgImage.png */,
 				B83A530E29E6BA370015D5A8 /* PassioNutritionAISDK.xcframework */,
 				B83A530529E6A9FE0015D5A8 /* Info.plist */,
 			);
@@ -136,8 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				B83A52FD29E6A9FE0015D5A8 /* Main.storyboard */,
+				B890B9EC29F8E19600C3EC12 /* EntryViewController.swift */,
 				B83A52FB29E6A9FE0015D5A8 /* FoodRecognitionViewController.swift */,
-				B8F7E32F29F7864A00E27928 /* SettingsViewController.swift */,
 				B8E0FCF929F78EF800F6D84D /* Views */,
 				B84AAB8C29E80125000890FF /* Cell */,
 				B8E0FCFA29F78F0100F6D84D /* Model */,
@@ -156,6 +162,7 @@
 				B8FF0C6029F6AFFF001157EE /* UIView+Extension.swift */,
 				B8FF0C5E29F6AFFF001157EE /* UIViewController+Extension.swift */,
 				B8FF0C5A29F6AFFF001157EE /* URL+Extension.swift */,
+				B890B9EE29F8E24400C3EC12 /* UIStoryboard+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -178,7 +185,7 @@
 			children = (
 				B8E0FCF529F78ECF00F6D84D /* Music1.mp3 */,
 				B8E0FCF329F78ECF00F6D84D /* Music2.mp3 */,
-				B8E0FCF429F78ECF00F6D84D /* Music3.mp3 */,
+				B890B9F029F8EDCA00C3EC12 /* Music3.mp3 */,
 			);
 			name = Media;
 			path = AIReels/Media;
@@ -189,6 +196,8 @@
 			children = (
 				B8FF0C3C29F6AF54001157EE /* FoodCardView.xib */,
 				B8FF0C3B29F6AF54001157EE /* FoodCardView.swift */,
+				B890B9F429F8F54500C3EC12 /* SettingsView.xib */,
+				B890B9F229F8F53800C3EC12 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,14 +270,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8FF0C3E29F6AF54001157EE /* FoodCardView.xib in Resources */,
-				B813722D29E96375000A4715 /* bgImage.png in Resources */,
-				B8E0FCF729F78ECF00F6D84D /* Music3.mp3 in Resources */,
 				B8FF0C4629F6AF71001157EE /* FoodNutritionCell.xib in Resources */,
 				B84AAB9529E80573000890FF /* FoodCell.xib in Resources */,
 				B8E0FCF629F78ECF00F6D84D /* Music2.mp3 in Resources */,
 				B83A530429E6A9FE0015D5A8 /* LaunchScreen.storyboard in Resources */,
 				B8E0FCF829F78ECF00F6D84D /* Music1.mp3 in Resources */,
 				B83A530129E6A9FE0015D5A8 /* Assets.xcassets in Resources */,
+				B890B9EB29F8DCCF00C3EC12 /* bgImage.png in Resources */,
+				B890B9F129F8EDCA00C3EC12 /* Music3.mp3 in Resources */,
+				B890B9F529F8F54500C3EC12 /* SettingsView.xib in Resources */,
 				B8FF0C4329F6AF71001157EE /* AlternativesMicroCollectionViewCell.xib in Resources */,
 				B83A52FF29E6A9FE0015D5A8 /* Main.storyboard in Resources */,
 			);
@@ -282,10 +292,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8FF0C6129F6AFFF001157EE /* UICollectionView+Extension.swift in Sources */,
+				B890B9EF29F8E24400C3EC12 /* UIStoryboard+Extension.swift in Sources */,
 				B8FF0C6829F6AFFF001157EE /* UIView+Extension.swift in Sources */,
 				B8FF0C6C29F6B062001157EE /* FoodRecord.swift in Sources */,
 				B83A52FC29E6A9FE0015D5A8 /* FoodRecognitionViewController.swift in Sources */,
+				B890B9F329F8F53800C3EC12 /* SettingsView.swift in Sources */,
 				B8FF0C3D29F6AF54001157EE /* FoodCardView.swift in Sources */,
+				B890B9ED29F8E19600C3EC12 /* EntryViewController.swift in Sources */,
 				B8FF0C6629F6AFFF001157EE /* UIViewController+Extension.swift in Sources */,
 				B8FF0C6529F6AFFF001157EE /* Double+Extension.swift in Sources */,
 				B8FF0C6429F6AFFF001157EE /* String+Extension.swift in Sources */,
@@ -293,7 +306,6 @@
 				B8FF0C4529F6AF71001157EE /* AlternativesMicroCollectionViewCell.swift in Sources */,
 				B83A52F829E6A9FD0015D5A8 /* AppDelegate.swift in Sources */,
 				B8FF0C6729F6AFFF001157EE /* FileManager+Extension.swift in Sources */,
-				B8F7E33029F7864A00E27928 /* SettingsViewController.swift in Sources */,
 				B84AAB9629E80573000890FF /* FoodCell.swift in Sources */,
 				B8FF0C4429F6AF71001157EE /* FoodNutritionCell.swift in Sources */,
 				B83A52FA29E6A9FE0015D5A8 /* SceneDelegate.swift in Sources */,

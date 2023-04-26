@@ -19,9 +19,9 @@ final class FoodCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        foodView.roundMyCorenrWith(radius: 8)
-        blurView.roundMyCorenrWith(radius: 8)
-        deleteButton.roundMyCorenrWith(radius: 8)
-        blurButtonView.roundMyCorenrWith(radius: 8)
+        foodView.roundMyCorner()
+        blurView.roundMyCorner()
+        deleteButton.roundMyCorner()
+        blurButtonView.roundMyCorner()
     }
 }
