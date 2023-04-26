@@ -118,7 +118,21 @@ extension FoodRecognitionViewController {
             settingsView?.captureMode = captureMode
             settingsView?.foodViewMode = foodViewMode
             settingsView?.isMusicOn = isMusicOn
-            manageViews(isHidden: true)
+            // Manage views
+            foodView.isHidden = true
+            foodBlurView.isHidden = true
+            showFoodCardView(show: false)
+            
+            if captureMode == .photo {
+                if settingsView == nil {
+                    isRecognitionsPaused = true
+                } else {
+                    isRecognitionsPaused = true
+                }
+                
+            } else {
+                isRecognitionsPaused = true
+            }
 
             UIView.animate(withDuration: 0.3, animations: {
                 self.settingsView?.alpha = 1
