@@ -21,6 +21,8 @@ final class FoodNutritionCell: UITableViewCell {
         super.awakeFromNib()
 
         containerView.roundMyCorner()
+        let borderColor = UIColor(red: 0.937, green: 0.941, blue: 0.965, alpha: 0.65)
+        containerView.applyBorder(width: 1, color: borderColor)
         blurView.roundMyCorner()
     }
 }

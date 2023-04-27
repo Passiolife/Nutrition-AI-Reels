@@ -20,8 +20,12 @@ final class FoodCell: UITableViewCell {
         super.awakeFromNib()
 
         foodView.roundMyCorner()
+        let borderColor = UIColor(red: 0.937, green: 0.941, blue: 0.965, alpha: 0.65)
+        foodView.applyBorder(width: 1, color: borderColor)
         blurView.roundMyCorner()
         deleteButton.roundMyCorner()
+        let borderColor2 = UIColor(red: 1, green: 1, blue: 1, alpha: 0.10)
+        deleteButton.applyBorder(width: 1, color: borderColor2)
         blurButtonView.roundMyCorner()
     }
 }
