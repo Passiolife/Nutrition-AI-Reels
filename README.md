@@ -13,9 +13,6 @@ The repo come with a demo app that you can use out of the box. The code can be a
 
 To use Passio's Nutrition-AI SDK you will need a license key. You can get one here: passio.ai/nutrition-ai The use of the SDK is free when you have under 10 active users so you can experiment and use it in demo and dev efforts for free.
 
-# Getting Started:
-This repo allows you to create Insta Reels and YouTube Shorts with the very few line of code.
-
 # BEFORE YOU CONTINUE:
 To use the SDK please make sure you receive your SDK license key from Passio. The SDK WILL NOT WORK without a valid SDK key.
 
@@ -35,3 +32,26 @@ A fast and easy way to get started with the Demo and create Reels is to test it 
 4. Modify the app bundle from "com.passio.NutritionAIReels" to "com.yourcompany...."
 5. Run the demo app on your iPhone.
 6. For support, please contact support@passiolife.com
+Adding Passio SDK into your project
+
+# Integrate Nutrition AI Reels/Shorts Sharing feature into your project.
+
+### Add PassioNutritionAISDK SDK into your project:
+
+1. Drag and drop the "PassioNutritionAISDK.xcframework" into your project. Make sure to select "Copy items if needed".
+2. In project "General" -> "Frameworks, Libraries and Embedded Content" Change to "Embed & Sign"
+3. Edit your Info.plist
+   - If opening from Xcode, right click and select 'open as source code' To allow camera usage add:
+   - `<key>NSCameraUsageDescription</key><string>For real-time food recognition</string>`.
+
+### Add necessary files into your project:
+1. Drag and drop `EntryViewController.swift` and `FoodRecognitionController.swift` files into your project. Make sure to select "Copy items if needed".
+2. Also add `EntryViewController` and `FoodRecognitionController` files from `Main.storyboard`.
+3. Drag and drop **Views, Cell, Model, Media and Extension** folder into your project. Make sure to select "Copy items if needed".
+4. Add **Colors and Images** from `Assets.xcassets`.
+5. After adding all above files and folder, you'll be able to build and share Reels/Shorts direclty from your app.
+6. You can customise the user interface to meet your own requirements.
+
+
+
+
