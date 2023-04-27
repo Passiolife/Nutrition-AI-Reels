@@ -32,7 +32,6 @@ A fast and easy way to get started with the Demo and create Reels is to test it 
 4. Modify the app bundle from "com.passio.NutritionAIReels" to "com.yourcompany...."
 5. Run the demo app on your iPhone.
 6. For support, please contact support@passiolife.com
-Adding Passio SDK into your project
 
 # Integrate Nutrition AI Reels/Shorts Sharing feature into your project.
 
