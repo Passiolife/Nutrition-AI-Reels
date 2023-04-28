@@ -6,35 +6,35 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		rzqALLijQBXztJnSQeOv+bVvTf4=
+		c/znAiGr0dCv15QoSVOPt7G8hXQ=
 		</data>
 		<key>Headers/PassioNutritionAISDK-Swift.h</key>
 		<data>
-		BqTf0IfT7yagsU/qVlbDWP+qaCo=
+		RKAGDhLpHSJl0k647+ctkgoia7A=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pU+VMbUAKEQhZXkFlAqrmEeo1k4=
+		HOKez1VELY5YvOiUK7B6fUUXqMM=
 		</data>
 		<key>Modules/PassioNutritionAISDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		IG6mDnYJnI0X3dNXHhQVpyQCk0U=
+		+sQtBlgSWkC2uCauyiTHDjrTcBo=
 		</data>
 		<key>Modules/PassioNutritionAISDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ztRGwzbEYzjRvg2lXsKktRy0HGA=
+		gufTEpfIQjFpzi0e9K/qqI1q3tM=
 		</data>
 		<key>Modules/PassioNutritionAISDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		wXxC1dsyQjME6u/9Nqqmvnzubv0=
+		0bDya3orbkbRb6gzJLRnMeFsBJY=
 		</data>
 		<key>Modules/PassioNutritionAISDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ztRGwzbEYzjRvg2lXsKktRy0HGA=
+		gufTEpfIQjFpzi0e9K/qqI1q3tM=
 		</data>
 		<key>Modules/PassioNutritionAISDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		uAARZqQKZHqh8+i7yL3AK7bxViA=
+		AocJ0a/bGLm+3b+qpL3qHTrr4xM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		T4OVNoREAIeXuZvwHOYwyWtYYPE=
+		wJ8LUreUmYeOzXgoUfKz1pwDPok=
 		</data>
 		<key>en.lproj/SDKLocalizable.strings</key>
 		<dict>
@@ -53,25 +53,25 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>passio_Attributes_DB.20230320.passiosecurezip</key>
+		<key>passio_Attributes_DB.20230419.passiosecurezip</key>
 		<data>
-		JIVlJn2t7SNEaZAYHtOXHnaylSs=
+		0ebKxihHTK9vgD3XrhvPlTQ/Rug=
 		</data>
-		<key>passio_FoodNet_HNN_v13.20230320.passiosecurezip</key>
+		<key>passio_FoodNet_HNN_v13.20230419.passiosecurezip</key>
 		<data>
-		pjAliIeBIeVKNfeyEwUHxj+HR/8=
+		IvOgR6olb3ST/xEV0k/tiY1hnic=
 		</data>
-		<key>passio_FoodNet_SSD_v13.20230320.passiosecurezip</key>
+		<key>passio_FoodNet_SSD_v13.20230419.passiosecurezip</key>
 		<data>
-		krBlu5ANaWkP8OGumhMV7RO5cZc=
+		f7eltTQiPNirvfCIxH03ZXEsm4U=
 		</data>
-		<key>passio_ocr_vectorize.20230320.passiosecurezip</key>
+		<key>passio_ocr_vectorize.20230419.passiosecurezip</key>
 		<data>
-		+GrAOTUfIpeYhwYikYvs1wm32sk=
+		jnCNJSKF5I4un5JoF8TxhGOUcbo=
 		</data>
 		<key>passiometadata.json</key>
 		<data>
-		zWFNPJ5AitLO+oLm+2ojqLdOk5c=
+		NLken1Z6q+EN8GVcoiaHiQuu9JQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -80,49 +80,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5RksyovyzWFL0k0gCUJOTYBed/AJICX1J1ix7hsYkj8=
+			1vCiBwsuFBDA92WNhmKoro6+s/5q3UL+WU+Y8Sef3KY=
 			</data>
 		</dict>
 		<key>Headers/PassioNutritionAISDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+RQazvS9kCA+WExL4USfGEqWDdCxvyg8JGWdka0A69k=
+			Mq3Q21P2MRLDKB5uzlCIxTHGSKk7OztiPVe9uB911eA=
 			</data>
 		</dict>
 		<key>Modules/PassioNutritionAISDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sRstCGiRbrpLKCTOOA8jJhHHm3WLRhO8w3BUhg3e2oc=
+			GMfDaKl3GgJNm1Mq1iQCcOGBUR4u7CIhfgGQDs4dJR4=
 			</data>
 		</dict>
 		<key>Modules/PassioNutritionAISDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aXC448jtL3rnvSpfPXgGx2tFJYV7a3NUwEzH0H1gJ8A=
+			4xKSfVTniJC9Yha0wIXULkEdiYcIOiqMS52+WBiqXko=
 			</data>
 		</dict>
 		<key>Modules/PassioNutritionAISDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V6/Wwq5PUGsYvw3S+M5xysdULzE4rjUYNt8LPVS6ieI=
+			yEKTsc2a2jOAorFkdECQ871Mb4bjdt7uaAXjhkzqpyw=
 			</data>
 		</dict>
 		<key>Modules/PassioNutritionAISDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aXC448jtL3rnvSpfPXgGx2tFJYV7a3NUwEzH0H1gJ8A=
+			4xKSfVTniJC9Yha0wIXULkEdiYcIOiqMS52+WBiqXko=
 			</data>
 		</dict>
 		<key>Modules/PassioNutritionAISDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zc1f68BocvyvhXhTUv3jhcwCeLYDJHWCs2ppVU3TJzs=
+			IgLGB1HaUoUvt5dkAZbdhPY5cl5mXtEZHqwo8xfi8VI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -136,7 +136,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			H9bMa2E31lCp8CiDfmlR/AOOy00UfeORA8r0VSeTvWQ=
+			FWGvXyIrAW4TBIezHHwebQhjHo/FwEUZJVlw6xsl55o=
 			</data>
 		</dict>
 		<key>en.lproj/SDKLocalizable.strings</key>
@@ -148,39 +148,39 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>passio_Attributes_DB.20230320.passiosecurezip</key>
+		<key>passio_Attributes_DB.20230419.passiosecurezip</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4IDoKgb574QL7QzDW3dXB0nCs9gb0HRotlNeyZUXXdc=
+			2+4ddOOvJ4mPQatgIlxe8155B4lnoJ6l23qw3sI9BFs=
 			</data>
 		</dict>
-		<key>passio_FoodNet_HNN_v13.20230320.passiosecurezip</key>
+		<key>passio_FoodNet_HNN_v13.20230419.passiosecurezip</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y1xMFrFN7tPGRkUx0Fuss1xKhl6dAiyufjALOggECTk=
+			UIEr+QINKpmBG3EbvDeeFkMcPnPkCEty2wRnpg/vY2w=
 			</data>
 		</dict>
-		<key>passio_FoodNet_SSD_v13.20230320.passiosecurezip</key>
+		<key>passio_FoodNet_SSD_v13.20230419.passiosecurezip</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W5uqJ4GNXC3qtjs2n0AwUNOI55UDIrQu+emmqbX+pMs=
+			+kg9kKTWm2iLUrdTqJB7rgBMF3h1iKaFKoyAt82n7RA=
 			</data>
 		</dict>
-		<key>passio_ocr_vectorize.20230320.passiosecurezip</key>
+		<key>passio_ocr_vectorize.20230419.passiosecurezip</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dx+dm4Ntofgpq4OgCr+YML97LdFw0JlAdWQtIDVbeXs=
+			zFoxPgXP0y+w2Y2ZirAoPYkFPHmkOAk6I+EUJZ4J9v8=
 			</data>
 		</dict>
 		<key>passiometadata.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PSM4ae/SnvKbX4xvsxCRkCyzLa6nt4SSV6x+HMCz4LE=
+			spMDKhK3OwoYs7Xeo3dhe3ZGraqMJ8Kn5lMf3BBYn50=
 			</data>
 		</dict>
 	</dict>

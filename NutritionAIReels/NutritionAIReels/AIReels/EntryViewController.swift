@@ -26,9 +26,11 @@ final class EntryViewController: UIViewController {
 
         let passioSDK = PassioNutritionAI.shared
         // Configure SDK with key
-        #error("Use the API key you received from us or request a key from support@passiolife.com. Delete this line before building.")
-        let key = "" // Add your key here.
-        let passioConfig = PassioConfiguration(key: key)
+        //#error("Use the API key you received from us or request a key from support@passiolife.com. Delete this line before building.")
+        // let key = "your-API-key"
+       let key = "k4YhOWdPPXwWyJlHylx1N6WkXZQpJe0HDxPx2w55xNR8" // Add your key here.
+        
+        let passioConfig = PassioConfiguration(key: key )
         passioSDK.statusDelegate = self
         passioSDK.configure(passioConfiguration: passioConfig) { (status) in
             print("Mode = \(status.mode)\nMissingfiles = \(String(describing: status.missingFiles))")
