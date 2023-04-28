@@ -1,6 +1,5 @@
 # Demo Video
-
-Demo Video goes here
+https://user-images.githubusercontent.com/89015620/235119766-28f46042-ae34-4982-bf9d-8351c610398d.MP4
 
 # Nutrition-AI-Reels
 
